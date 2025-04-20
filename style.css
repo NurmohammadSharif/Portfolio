@@ -1,5 +1,6 @@
 *{
     margin:0;
+    color:black;
 }
 .box{
     height:auto;
@@ -12,4 +13,47 @@
     height:auto;
     width:50%;
     border: 2px solid green;
+}
+.background{
+    height:700px;
+    width:100%;
+   background-image: url(background.jpg);
+   background-size:cover;
+   color:white;
+}
+.head{
+    height:50px;
+    width:100%;
+    font-size:40px;
+    display:flex;
+    justify-content:space-between;
+    position: fixed;
+    background-color: #777F7F;
+    z-index: 3;
+    
+}
+
+.first-letter{
+    color:red;
+}
+.other-letter{
+    color:#c0d9c0;
+}
+.one{
+    height:50px;
+    width:400px;
+    font-size: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.two{
+    height:50px;
+    width:900px;
+ 
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
