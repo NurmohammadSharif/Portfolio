@@ -1,7 +1,8 @@
 *{
     margin:0;
     font-family:'Courier New', Courier, monospace;
-    border:border-box;
+    box-sizing: border-box;
+
 }
 
 .background{
@@ -20,6 +21,9 @@
     position: fixed;
     background-color: #777F7F;
     z-index: 3;
+
+        flex-wrap: wrap;
+        padding: 0 10px;
     
 }
 
@@ -37,29 +41,35 @@
     justify-content: space-between;
     align-items: center;
 }
-.two{
-    height:50px;
-    width:900px;
- 
-    font-size: 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
+    .two {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 0 10px;
+        width: auto;
+        font-size: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
 .animation:hover{
     background-color: #009698;
 }
 
 .show {
-    position: absolute;
-    right: 200px;
-    top: 200px;
+     position: absolute;
+     right:4rem;
+     top:4rem;
+     margin: 100px auto 0 auto;
+     padding: 20px;
+      max-width: 90%;
+      text-align: center;
     font-size: 35px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 .show p, #portfolio {
     opacity: 0;
@@ -215,4 +225,33 @@ th {
     height:50px;
     width:100%;
     border:2px solid red;
+}
+
+
+@media screen and (max-width: 768px) {
+    .head {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 28px;
+    }
+
+    .two {
+        font-size: 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+        width: 100%;
+    }
+
+    .about-me {
+        font-size: 1rem;
+    }
+
+    .education {
+        font-size: 1.2rem;
+    }
+
+    table, th, td {
+        font-size: 0.9rem;
+    }
 }
