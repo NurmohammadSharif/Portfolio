@@ -61,3 +61,24 @@
 .bar-space{
     margin:0.01rem;
 }
+
+@media (max-width: 1000px) {
+    .two {
+      width:50%;
+    }
+    .one{
+        width:50%;
+        font-size: 1rem;
+    }
+  
+    #mobile_version {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .one{
+        font-size: 1.5rem;
+    }
+}
